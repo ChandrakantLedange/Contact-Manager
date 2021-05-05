@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact manager</title>
+    <!-- contact manager -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="contact_manager">
+        <div class="contact_header">
+          <i class="far fa-address-book fa-5x contact_logo"></i>
+          <p class="contact_heading">Contact Manager</p>
+        </div>
+        <div class="contact_form">
+          <form onsubmit="submitContact(event)">
+            <input
+              type="text"
+              placeholder="Enter Contact Name"
+              id="name"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Enter Phone Number"
+              id="number"
+              required
+            />
+            <button type="submit">Add Contact</button>
+          </form>
+        </div>
+        <div class="contact_body"></div>
+      </div>
+    </div>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/5b384a2784.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- site.js -->
+    <script src="js/site.js"></script>
+  </body>
+</html>
